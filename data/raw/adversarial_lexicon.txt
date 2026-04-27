@@ -1,0 +1,138 @@
+# Adversarial vocabulary lexicon (auditable, hand-curated).
+# Lines starting with # are comments. Single phrase per line.
+# Used in scripts/03_adversarial_edges.py to score windows for hostility.
+# This is a wordlist, not a sentiment model — it is interpretable, period-aware,
+# and tuned to the rhetorical register of late-19th-c. theosophical polemic.
+
+# Direct accusations of fraud
+charlatan
+charlatans
+charlatanism
+fraud
+fraudulent
+imposter
+impostor
+impostors
+imposture
+impostures
+trickery
+trickster
+swindle
+swindler
+quack
+quackery
+humbug
+deception
+deceiver
+deceivers
+deceptive
+sham
+fake
+faker
+forgery
+forged
+forging
+hoax
+hoaxer
+
+# Exposure / denunciation register
+exposed
+exposure
+exposed as
+denounced
+denounce
+denouncing
+denunciation
+unmasked
+unmasking
+discredited
+discredit
+debunked
+refuted
+repudiate
+repudiated
+repudiation
+disowned
+
+# Schism / break / hostility
+schism
+schismatic
+broken with
+broken away
+broke with
+broke from
+seceded
+secession
+expelled
+expulsion
+excommunicated
+heretic
+heretical
+heresy
+apostate
+apostasy
+renegade
+traitor
+treachery
+betrayed
+betrayal
+disloyal
+
+# Legal / formal
+libel
+libelled
+libelous
+slander
+slandered
+slanderous
+lawsuit
+sued
+prosecuted
+prosecution
+perjury
+perjured
+
+# Specifically Coulomb-affair / SPR / Hodgson / Solovyov register
+coulomb letters
+coulomb affair
+shrine
+shrine room
+trapdoor
+sliding panel
+psychical research
+society for psychical research
+hodgson report
+solovyoff
+solovyov
+isis incident
+
+# Generic hostility verbs
+attack
+attacked
+assail
+assailed
+vilify
+vilified
+calumny
+calumnies
+calumniate
+slanderer
+defamation
+defamed
+maligned
+malignant
+malice
+malicious
+vituperation
+vituperative
+
+# Negation / denial frequently in polemic
+falsehood
+falsehoods
+liar
+lying
+mendacious
+mendacity
+spurious
+bogus
+counterfeit

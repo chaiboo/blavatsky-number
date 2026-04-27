@@ -1,0 +1,23 @@
+[project]
+name = "theosophy-number"
+version = "0.1.0"
+description = "Erdős-style social-distance graph for the modern theosophical movement (multi-center, with adversarial variant)."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.0",
+    "pyarrow>=14.0",
+    "networkx>=3.2",
+    "requests>=2.31",
+    "tqdm>=4.66",
+    "rapidfuzz>=3.6",
+    "regex>=2024.0",
+    # SPARQL is just HTTP+JSON; no SPARQLWrapper needed.
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

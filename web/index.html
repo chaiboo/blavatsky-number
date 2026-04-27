@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Your Blavatsky Number</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Bodoni+Moda:ital,wght@0,800;0,900;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="atlas-link" href="atlas.html">network analysis <span class="arr">→</span></a>
+
+<div class="frame">
+
+  <!-- LEFT COLUMN: query + result number -->
+  <section class="left">
+    <header class="brand">
+      <span class="brand-mark">
+        <svg viewBox="0 0 48 48" width="42" height="42" aria-hidden="true">
+          <!-- TS seal motif: ouroboros + interlocking triangles + central dot -->
+          <circle cx="24" cy="24" r="21" fill="none" stroke="#0d0d12" stroke-width="1.5"/>
+          <circle cx="24" cy="24" r="20.5" fill="none" stroke="#0d0d12" stroke-width="0.6" stroke-dasharray="1.5 2.2"/>
+          <polygon points="24,8 38,32 10,32" fill="none" stroke="#1d3df0" stroke-width="1.6"/>
+          <polygon points="24,40 10,16 38,16" fill="none" stroke="#ff2d70" stroke-width="1.6"/>
+          <circle cx="24" cy="24" r="2.6" fill="#0d0d12"/>
+        </svg>
+      </span>
+      <span class="brand-text">
+        <span class="brand-name">Blavatsky Number</span>
+        <span class="brand-sub">how far is anyone from the center of modern occult cosmopolitanism, measured in handshakes (and, on the dark side, in feuds).</span>
+      </span>
+    </header>
+
+    <div class="ask">
+      <label class="ask-label" for="q">Type a name</label>
+      <div class="ask-input-row">
+        <input id="q" type="text" autocomplete="off" spellcheck="false" placeholder="Edison" />
+        <button id="flip" class="flip" type="button" title="Toggle friendly / hostile">
+          <span data-mode="friendly">friendly</span>
+          <span data-mode="hostile">hostile</span>
+        </button>
+      </div>
+      <ul id="suggest" class="suggest" hidden></ul>
+    </div>
+
+    <div class="chips">
+      <span class="chips-label">Or click a famous one →</span>
+      <div class="chips-rail" id="chips"></div>
+    </div>
+
+    <!-- the giant number + headline -->
+    <div class="result" id="result">
+      <div class="result-pre">distance to <em>Helena Petrovna Blavatsky</em></div>
+      <div class="result-numwrap">
+        <span class="result-num" id="num">·</span>
+        <span class="result-num-shadow" id="num-shadow" aria-hidden="true">·</span>
+      </div>
+      <div class="result-post" id="post">type a name to begin.</div>
+    </div>
+
+    <div class="left-spacer"></div>
+
+    <footer class="foot">
+      <span class="foot-l"><strong>111</strong> figures · <strong>793</strong> friendly edges · <strong>194</strong> hostile edges</span>
+      <span class="foot-r">corpus: <em>The Theosophist</em>, vols 1–55 (1879–1934) + Adyar / Lucifer / per-author writings + curated edges</span>
+    </footer>
+  </section>
+
+  <!-- RIGHT COLUMN: live path canvas + provenance -->
+  <section class="right">
+    <div class="canvas-wrap">
+      <svg id="viz" viewBox="0 0 720 720" preserveAspectRatio="xMidYMid meet"></svg>
+      <div class="canvas-hint" id="hint">click any disc to make that person the new query.</div>
+    </div>
+
+    <aside class="prov" id="prov">
+      <div class="prov-empty">
+        <div class="prov-empty-mark">
+          <svg width="120" height="120" viewBox="0 0 120 120">
+            <circle cx="60" cy="60" r="50" fill="none" stroke="#1d3df0" stroke-width="3" stroke-dasharray="3 6" />
+            <circle cx="60" cy="60" r="6" fill="#ff2d70"/>
+          </svg>
+        </div>
+        <p>Pick a name. The path draws itself, and every step says what the connection actually is.</p>
+        <div class="quick-tries">
+          <button data-target="edison_thomas">Edison</button>
+          <button data-target="kandinsky_w">Kandinsky</button>
+          <button data-target="yeats_w_b">Yeats</button>
+          <button data-target="gandhi_m">Gandhi</button>
+          <button data-target="huxley_aldous">Huxley</button>
+          <button data-target="jung_c_g">Jung</button>
+          <button data-target="crowley_a" data-mode="hostile">Crowley (hostile)</button>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

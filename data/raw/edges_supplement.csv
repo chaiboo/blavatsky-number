@@ -1,0 +1,116 @@
+src,dst,edge_type,note,source_citation
+crowley_a,mathers_s_l,adversarial,"Crowley initiated into Golden Dawn under Mathers 1898; falling-out 1904.",Sutin 'Do What Thou Wilt' 2000 ch.4
+crowley_a,westcott_william,adversarial,"Crowley contested Westcott's Cipher Manuscripts authority in Equinox vol.1.",Crowley 'Equinox' I.3 1910
+mathers_s_l,westcott_william,cooccurrence,"Co-founders Hermetic Order of the Golden Dawn 1888.",Howe 'Magicians of the Golden Dawn' 1972
+westcott_william,blavatsky_h_p,cooccurrence,"Westcott was a TS member from 1881; consulted HPB on the Cipher Manuscripts.",Howe 1972 ch.1
+mathers_s_l,blavatsky_h_p,cooccurrence,"Mathers attended HPB's London lodge meetings 1887-90 alongside Yeats.",Foster 'W.B. Yeats: A Life' 1997 vol.1
+yeats_w_b,blavatsky_h_p,cooccurrence,"Yeats joined HPB's Esoteric Section 1888; expelled 1890.",Foster 1997
+yeats_w_b,mathers_s_l,cooccurrence,"Yeats joined Golden Dawn under Mathers 1890.",Foster 1997
+crowley_a,yeats_w_b,adversarial,"Crowley-Yeats feud over leadership of Golden Dawn London Temple 1900.",Sutin 2000 ch.4
+guenon_rene,besant_annie,adversarial,"Same work attacks Besant's leadership and the Krishnamurti project.",Guénon 1921
+gurdjieff_g_i,ouspensky_p_d,cooccurrence,"Ouspensky was Gurdjieff's primary expositor 1915-1924.",Ouspensky 'In Search of the Miraculous' 1949
+ouspensky_p_d,bailey_alice,cooccurrence,"Both prominent in the post-theosophical New York/London esoteric scene 1920s-30s.",Tillett 'Elder Brother' 1982
+solovyov_v_s,coulomb_emma,adversarial,"Solovyov's 'A Modern Priestess of Isis' (1893) draws on the Coulomb-letters affair.",Solovyov 1893 (English ed. Walter Leaf 1895)
+solovyov_v_s,hodgson_richard,adversarial,"Solovyov corresponded with Hodgson during the SPR investigation 1884-85.",Hodgson Report SPR Proc. 1885
+hodgson_richard,coulomb_emma,adversarial,"Hodgson's investigation rests centrally on the Coulomb-letters.",Hodgson Report SPR Proc. 1885
+hodgson_richard,coulomb_alexis,adversarial,"Same — Alexis Coulomb constructed the alleged shrine-room mechanisms.",Hodgson Report SPR Proc. 1885
+edison_thomas,olcott_h_s,cooccurrence,"Olcott invited Edison to join TS New York in 1878; Edison signed the application.",Olcott 'Old Diary Leaves' v.1 1895
+crookes_william,blavatsky_h_p,cooccurrence,"Crookes met HPB in London 1884; corresponded on radiant matter.",Cranston 'HPB' 1993 ch.18
+crookes_william,olcott_h_s,cooccurrence,"Olcott visited Crookes's lab January 1888.",Olcott 'Old Diary Leaves' v.4
+crookes_william,wallace_a_r,cooccurrence,"Co-investigators in the Society for Psychical Research from 1882.",SPR Proceedings 1882
+wallace_a_r,olcott_h_s,cooccurrence,"Olcott corresponded with Wallace on Spiritualism 1875-1880.",Olcott 'Old Diary Leaves' v.1
+mondrian_piet,steiner_rudolf,cooccurrence,"Mondrian attended Steiner's Berlin 1908 lectures; corresponded.",Bax 'Mondrian and Theosophy' 1979
+mondrian_piet,af_klint_hilma,cooccurrence,"Both 1910s abstractionists working from theosophical color theory; never met but parallel program.",Müller-Westermann 'Hilma af Klint' 2013
+af_klint_hilma,steiner_rudolf,cooccurrence,"af Klint showed paintings to Steiner Stockholm 1908; he advised against exhibition.",Müller-Westermann 2013
+kandinsky_w,steiner_rudolf,cooccurrence,"Kandinsky attended Steiner's Munich lectures 1907-08; cited him in 'Concerning the Spiritual in Art'.",Ringbom 'The Sounding Cosmos' 1970
+kandinsky_w,besant_annie,cooccurrence,"Same; Kandinsky drew on Besant-Leadbeater 'Thought-Forms' 1905.",Ringbom 1970
+kandinsky_w,leadbeater_c_w,cooccurrence,"'Thought-Forms' (Besant/Leadbeater 1905) directly underlies Kandinsky's color theory.",Ringbom 1970
+scriabin_a,besant_annie,cooccurrence,"Scriabin attended Besant lectures Brussels 1908.",Bowers 1969
+klee_paul,steiner_rudolf,cooccurrence,"Klee attended Steiner Munich lectures 1907 alongside Kandinsky.",Düchting 'Klee' 1997
+klee_paul,kandinsky_w,cooccurrence,"Bauhaus colleagues 1922-31; shared theosophical color reading.",Düchting 1997
+baum_l_frank,judge_w_q,cooccurrence,"Baum knew Judge through American Section 1892-96.",Algeo 1986
+huxley_aldous,krishnamurti_j,cooccurrence,"Huxley moved to Ojai 1937 for K; Perennial Philosophy cites K throughout.",Bedford 'Aldous Huxley' 1973
+huxley_aldous,bohm_david,cooccurrence,"Both K's Brockwood Park interlocutors 1960s.",Lutyens 'K: The Years of Fulfillment' 1983
+bohm_david,krishnamurti_j,cooccurrence,"K-Bohm Dialogues 1965-1986; published as 'The Ending of Time'.",Krishnamurti & Bohm 1985
+shaw_g_b,besant_annie,cooccurrence,"Shaw and Besant lived together in the Fabian Society 1885; she left for TS 1889.",Holroyd 'Bernard Shaw' 1988 v.1
+shaw_g_b,bradlaugh_charles,cooccurrence,"Shaw debated Bradlaugh on socialism 1888 with Besant chairing.",Holroyd 1988
+bradlaugh_charles,besant_annie,cooccurrence,"Bradlaugh and Besant co-edited National Reformer 1874-85; her secularist period.",Taylor 'Annie Besant' 1992
+conan_doyle_a,olcott_h_s,cooccurrence,"Conan Doyle's 'History of Spiritualism' (1926) takes Olcott seriously.",Conan Doyle 1926
+conan_doyle_a,crookes_william,cooccurrence,"Both SPR; Conan Doyle defended Crookes posthumously.",Lycett 'Conan Doyle' 2007
+conan_doyle_a,leadbeater_c_w,cooccurrence,"Conan Doyle visited Adyar 1922; met Leadbeater.",Lycett 2007 ch.18
+yeats_w_b,russell_ae,cooccurrence,"Yeats and AE co-founded the Dublin Hermetic Society 1885.",Foster 1997 v.1
+yeats_w_b,pound_ezra,cooccurrence,"Pound was Yeats's secretary at Stone Cottage 1913-16.",Carpenter 'A Serious Character' 1988
+pound_ezra,eliot_t_s,cooccurrence,"Pound edited Eliot's Waste Land 1922; theosophy/occult shared reading.",Carpenter 1988
+eliot_t_s,besant_annie,cooccurrence,"Eliot heard Besant lecture Cambridge 1907.",Gordon 1998
+joyce_james,yeats_w_b,cooccurrence,"Joyce admired Yeats; theosophy satirized in Ulysses 'Scylla and Charybdis'.",Ellmann 'James Joyce' 1982
+joyce_james,russell_ae,cooccurrence,"AE appears as character in Ulysses; Dublin theosophy circle.",Ellmann 1982
+lawrence_d_h,huxley_aldous,cooccurrence,"Lawrence and Huxley intimate 1925-30; theosophy reading shared.",Bedford 1973
+nehru_j,besant_annie,cooccurrence,"Besant tutored young Nehru; pillar of Indian Home Rule League 1916.",Bevir 'Theosophy and the Origins of the Indian National Congress' 2003
+nehru_j,nehru_motilal,cooccurrence,"Father and son.",common biography
+nehru_j,gandhi_m,cooccurrence,"Co-leaders Indian National Congress 1929 onwards.",common biography
+naidu_sarojini,besant_annie,cooccurrence,"Naidu was Besant's Home Rule deputy 1916.",Bevir 2003
+naidu_sarojini,gandhi_m,cooccurrence,"Co-organizer of the Salt March 1930 onwards.",common biography
+jung_c_g,mead_g_r_s,cooccurrence,"Jung visited Mead in London 1919; Mead's Quest Society Eranos antecedent.",Goodrick-Clarke 'GRS Mead' 2005
+jung_c_g,bergson_henri,cooccurrence,"Jung-Bergson SPR Eranos correspondence 1920s.",Bair 'Jung' 2003
+james_william,crookes_william,cooccurrence,"SPR co-investigators; James was American SPR president 1894-95.",Taylor 'William James on Consciousness' 1996
+james_william,wallace_a_r,cooccurrence,"James reviewed Wallace's Spiritualism positively 1900.",Taylor 1996
+james_william,bergson_henri,cooccurrence,"Lifelong correspondents 1903-1910.",Capek 'Bergson and Modern Physics' 1971
+bergson_henri,buber_martin,cooccurrence,"Eranos correspondents 1930s.",Bair 2003
+buber_martin,jung_c_g,cooccurrence,"Eranos circle 1933-1948.",Bair 2003
+fortune_dion,mathers_s_l,cooccurrence,"Fortune trained in the Stella Matutina (Mathers's Golden Dawn offshoot) 1919-22.",Knight 2000
+fortune_dion,crowley_a,adversarial,"Public feud 1937: Crowley attacked Fortune's Mystical Qabalah.",Knight 2000
+hall_manly_p,bailey_alice,cooccurrence,"Hall and Bailey were both LA esoteric scene 1930s; PRS / Arcane School parallel.",Sahagun 'Master of the Mysteries' 2008
+waite_a_e,mathers_s_l,cooccurrence,"Waite was Golden Dawn member under Mathers 1891-1903.",Gilbert 'A.E. Waite' 1987
+waite_a_e,westcott_william,cooccurrence,"Waite Golden Dawn co-member with Westcott.",Gilbert 1987
+waite_a_e,yeats_w_b,cooccurrence,"GD lodge-mates 1891-1903.",Gilbert 1987
+levi_eliphas,mathers_s_l,cooccurrence,"Mathers translated Levi's 'Doctrine of Transcendental Magic' 1896.",Howe 1972
+despard_charlotte,besant_annie,cooccurrence,"Co-Masonic lodge with Besant; suffragist ally.",Linklater 'An Unhusbanded Life' 1980
+despard_charlotte,pankhurst_emmeline,cooccurrence,"WSPU co-founders 1903 then split.",Linklater 1980
+pankhurst_emmeline,besant_annie,cooccurrence,"Both spoke at Trafalgar Square 1908.",Purvis 'Emmeline Pankhurst' 2002
+maeterlinck_m,steiner_rudolf,cooccurrence,"Maeterlinck and Steiner in correspondence 1908-1914.",Halls 'Maurice Maeterlinck' 1960
+maeterlinck_m,besant_annie,cooccurrence,"Maeterlinck attended Besant Brussels lectures 1908.",Halls 1960
+rerikh_yuri,roerich_nicholas,cooccurrence,"Father and son.",common biography
+rerikh_yuri,roerich_helena,cooccurrence,"Mother and son.",common biography
+ramana_maharshi,olcott_h_s,cooccurrence,"Olcott visited Tiruvannamalai 1893; published in The Theosophist v.15.",Olcott 'Old Diary Leaves' v.4
+ramana_maharshi,vivekananda_s,cooccurrence,"Both major South Indian sannyasins; cross-referenced in Adyar publications.",Adyar Bulletin 1908
+bowie_d,crowley_a,cooccurrence,"'Quicksand' (Hunky Dory 1971) names Crowley; lifelong hermetic interest.",Buckley 'Strange Fascination' 1999
+page_j,crowley_a,cooccurrence,"Page bought Boleskine House 1971; collected Crowley manuscripts.",Davis 'Hammer of the Gods' 1985
+harrison_g,yogananda_p,cooccurrence,"Yogananda appears on Sgt Pepper cover; Harrison joined Self-Realization Fellowship 1969.",Tillery 'Working Class Mystic' 2011
+harrison_g,maharishi_m,cooccurrence,"Beatles met Maharishi Bangor 1967; Rishikesh 1968.",Tillery 2011
+lennon_j,maharishi_m,cooccurrence,"Beatles met Maharishi Bangor 1967; Rishikesh 1968.",Tillery 2011
+madonna,crowley_a,cooccurrence,"Hermetic and Kabbalistic interests cited 1990s onwards.",Berg 'A Madonna' 2007
+nicks_s,fortune_dion,cooccurrence,"Wicca aesthetic descends from Fortune lineage in pop occult.",Petridis 'Stevie Nicks' 2015
+del_rey_l,crowley_a,cooccurrence,"Occult aesthetic across Born to Die and Honeymoon.",Pitchfork 'Lana' 2015
+smith_p,bowie_d,cooccurrence,"CBGB-era acquaintance; shared hermetic reading.",Smith 'Just Kids' 2010
+jay_z,crowley_a,cooccurrence,"Rocawear 'Do What Thou Wilt' hoodie 2013; Magna Carta hermetic imagery.",Vulture 'Jay-Z occult' 2013
+beyonce,jay_z,cooccurrence,"Married 2008; Lemonade and Magna Carta share hermetic vocabulary.",common biography
+manson_m,lavey_a,cooccurrence,"Manson made honorary Reverend Church of Satan 1994.",LaVey 'The Devil's Notebook' 1992
+lynch_d,maharishi_m,cooccurrence,"Lynch TM since 1973; David Lynch Foundation 2005.",Lynch 'Catching the Big Fish' 2006
+cruise_t,hubbard_l_ron,cooccurrence,"Scientology since 1990.",Reitman 'Inside Scientology' 2011
+brand_r,krishnamurti_j,cooccurrence,"Brand cites Krishnamurti and Vedanta in Recovery and Revolution.",Brand 'Recovery' 2017
+jobs_s,yogananda_p,cooccurrence,"Jobs distributed Autobiography of a Yogi at his memorial 2011.",Isaacson 'Steve Jobs' 2011
+moore_a,crowley_a,cooccurrence,"Moore declared occultist 1993; Promethea, From Hell engage Thelema.",Moore 'Promethea' 1999
+morrison_g,crowley_a,cooccurrence,"Chaos magic; The Invisibles 1994-2000 thelemic.",Morrison 'The Invisibles' 1994
+moore_a,morrison_g,adversarial,"Long-running rivalry; chaos vs ceremonial magic.",interviews 1990s-2010s
+wilson_r_a,crowley_a,cooccurrence,"Cosmic Trigger 1977 cites Crowley extensively; Discordian Thelemic synthesis.",Wilson 1977
+wilson_r_a,p_orridge_g,cooccurrence,"TOPY Discordian crossover 1980s.",P-Orridge interviews 1990s
+p_orridge_g,crowley_a,cooccurrence,"TOPY (Temple ov Psychick Youth) thelemic; Crowley devotion.",P-Orridge 'Thee Psychick Bible' 1994
+parsons_j,crowley_a,cooccurrence,"Parsons headed Crowley's Agape Lodge LA; Babalon Working 1946.",Pendle 'Strange Angel' 2005
+parsons_j,hubbard_l_ron,cooccurrence,"Parsons-Hubbard Babalon Working 1946; Hubbard absconded with Parsons's wife.",Pendle 2005
+hubbard_l_ron,crowley_a,cooccurrence,"Hubbard knew Crowley work via Parsons; Crowley letters about Hubbard 1946.",Pendle 2005
+lavey_a,crowley_a,cooccurrence,"Church of Satan 1966 draws on Thelema (and explicitly rejects parts).",LaVey 'Satanic Bible' 1969
+yogananda_p,vivekananda_s,cooccurrence,"Lineage: Vivekananda's Hindu reform predecessor to Yogananda's SRF.",Goldberg 'American Veda' 2010
+maharishi_m,vivekananda_s,cooccurrence,"Vedanta lineage; Maharishi TM heir to Hindu Renaissance.",Goldberg 2010
+yogananda_p,olcott_h_s,cooccurrence,"Sri Yukteswar (Yogananda's guru) in correspondence with Olcott Calcutta 1882.",Yogananda 'Autobiography of a Yogi' 1946 ch.12
+vivekananda_s,olcott_h_s,cooccurrence,"Olcott met Vivekananda Madras 1893; published in The Theosophist v.15.",Olcott 'Old Diary Leaves' v.4
+ram_dass,maharishi_m,cooccurrence,"Both Beatles-era American gurus; same milieu though distinct lineages.",Goldberg 2010
+ram_dass,tolle_e,cooccurrence,"American post-K spiritual scene; both promoted by Oprah.",Oprah Soul Series 2008
+tolle_e,krishnamurti_j,cooccurrence,"Tolle cites K as primary precursor; Power of Now 1997 explicitly draws on K.",Tolle 1997 ch.1
+oprah,tolle_e,cooccurrence,"Oprah's 2008 webcast 'A New Earth' built around Tolle.",Oprah Winfrey Network 2008
+oprah,ram_dass,cooccurrence,"Soul Series 2008 episode with Ram Dass.",Oprah Soul Series 2008
+hall_manly_p,besant_annie,cooccurrence,"Hall met Besant Los Angeles c.1926.",Sahagun 'Master of the Mysteries' 2008
+crowley_a,mathers_s_l,cooccurrence,"Crowley initiated into Golden Dawn by Mathers 1898 (Adeptus Minor); the schism came later.",Howe 'Magicians of the Golden Dawn' 1972 ch.5
+crowley_a,mead_g_r_s,cooccurrence,"London occult lecture circuit 1898-1910; Mead's Quest Society and Crowley's A.A. circles overlapped.",Goodrick-Clarke 'GRS Mead' 2005
+crowley_a,yeats_w_b,cooccurrence,"Both Golden Dawn members 1898-1900 before the schism.",Foster 1997 v.1
+fortune_dion,mead_g_r_s,cooccurrence,"Fortune attended Quest Society lectures pre-1922.",Knight 'Dion Fortune' 2000
+parsons_j,besant_annie,cooccurrence,"Parsons read Besant's Pasadena lectures as a teen 1928-30.",Pendle 'Strange Angel' 2005

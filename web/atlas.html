@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Network Analysis · Blavatsky Number</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Bodoni+Moda:ital,wght@0,800;0,900;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="atlas-body">
+
+<header class="atlas-masthead">
+  <div class="masthead-rule"></div>
+  <a class="atlas-back" href="index.html" aria-label="back to the lookup">
+    <svg viewBox="0 0 48 48" width="28" height="28" aria-hidden="true">
+      <circle cx="24" cy="24" r="21" fill="none" stroke="#0d0d12" stroke-width="1.5"/>
+      <polygon points="24,8 38,32 10,32" fill="none" stroke="#1d3df0" stroke-width="1.4"/>
+      <polygon points="24,40 10,16 38,16" fill="none" stroke="#ff2d70" stroke-width="1.4"/>
+      <circle cx="24" cy="24" r="2.4" fill="#0d0d12"/>
+    </svg>
+    <span>back to the lookup</span>
+  </a>
+  <div class="masthead-tag">companion to the lookup</div>
+  <h1 class="atlas-title">Network<br><em>Analysis</em></h1>
+  <p class="atlas-kicker">Six structural readings of the Theosophical sociogram, 1879 to 1934. The front page gives you the punchline; the working is here.</p>
+  <div class="atlas-meta">
+    <div class="m-cell"><span class="m-k">corpus</span><span class="m-v"><em>The Theosophist</em>, vols 1 to 55</span></div>
+    <div class="m-cell"><span class="m-k">figures</span><span class="m-v">137 nodes</span></div>
+    <div class="m-cell"><span class="m-k">friendly edges</span><span class="m-v">822</span></div>
+    <div class="m-cell"><span class="m-k">hostile edges</span><span class="m-v">194</span></div>
+    <div class="m-cell"><span class="m-k">passages</span><span class="m-v">1,972 corpus snippets</span></div>
+  </div>
+</header>
+
+<section class="atlas-intro">
+  <div class="intro-gutter">
+    <span class="intro-folio">00</span>
+    <span class="intro-disc">prefatory</span>
+  </div>
+  <div class="intro-body">
+    <p class="atlas-prose drop">The lookup on the front page is a parlour trick. It collapses fifty-odd years of letters, lectures, schisms, séances and journal columns into a single integer, which is useful as a hook and not for much else. This page is the back room. The same data, opened up, with the seams left visible.</p>
+    <p class="atlas-prose">The corpus is fifty-five annual volumes of <em>The Theosophist</em> (1879 to 1934), supplemented by Adyar pamphlets, <em>Lucifer</em>, per-author writings from the Pasadena and independent strands, and a curated overlay of cross-tradition figures: Anthroposophy, Krishnamurti's late circle, the Golden Dawn and Thelemite adversaries, and the modernist artists and writers who drifted in and out. An edge between two figures is not a biographical relationship. It is co-mention in the same passage of corpus prose, weighted by frequency and provenance, and hand-vetted where the corpus thins. Two graphs are kept in parallel. The friendly graph (shared platforms, joint appearances, co-authored work) sits alongside the hostile graph (denunciations, the Coulomb affair, the schism literature, the Hodgson report). Together they let one ask the register-asymmetric questions the front-page number politely declines to.</p>
+    <p class="atlas-prose">What follows can speak to the shape of editorial attention, to who brokered between otherwise-disconnected traditions, to how the network accreted across the long late-Victorian arc, and to where allegiance and grievance fail to track each other. It cannot speak to the texture of any single relationship, to the silences in the archive, or to the figures an English-language Adyar-centric corpus was always going to leave out.</p>
+  </div>
+  <aside class="intro-margin">
+    <div class="margin-block">
+      <span class="margin-label">in this page</span>
+      <ol class="margin-toc">
+        <li><span class="toc-num">01</span><span class="toc-name">Degree distribution</span><span class="toc-tag">who is loud</span></li>
+        <li><span class="toc-num">02</span><span class="toc-name">Tradition mixing</span><span class="toc-tag">who talks to whom</span></li>
+        <li><span class="toc-num">03</span><span class="toc-name">Brokerage vs reach</span><span class="toc-tag">who bridges</span></li>
+        <li><span class="toc-num">04</span><span class="toc-name">Temporal accretion</span><span class="toc-tag">when ties were born</span></li>
+        <li><span class="toc-num">05</span><span class="toc-name">Register asymmetry</span><span class="toc-tag">friend vs foe</span></li>
+        <li><span class="toc-num">06</span><span class="toc-name">Distance from HPB</span><span class="toc-tag">the histogram</span></li>
+      </ol>
+    </div>
+    <div class="margin-block">
+      <span class="margin-label">a small glossary</span>
+      <dl class="margin-gloss">
+        <dt>edge</dt><dd>two figures sharing the same paragraph of corpus prose. Not a friendship; a co-mention.</dd>
+        <dt>degree</dt><dd>how many distinct people a figure shares paragraphs with. Loudness, basically.</dd>
+        <dt>betweenness</dt><dd>how often a figure sits on the shortest path between two others. Bridge-keeping.</dd>
+        <dt>friendly / hostile</dt><dd>two parallel graphs. The corpus tells you which register a co-mention sits in by the words around it.</dd>
+      </dl>
+    </div>
+    <div class="margin-block">
+      <span class="margin-label">by the numbers</span>
+      <ul class="margin-stats">
+        <li><span class="stat-num">137</span><span class="stat-cap">figures in the lexicon</span></li>
+        <li><span class="stat-num">822</span><span class="stat-cap">friendly edges</span></li>
+        <li><span class="stat-num">194</span><span class="stat-cap">hostile edges</span></li>
+        <li><span class="stat-num">55</span><span class="stat-cap">annual volumes parsed</span></li>
+        <li><span class="stat-num">1.72</span><span class="stat-cap">mean hops to Blavatsky</span></li>
+      </ul>
+    </div>
+  </aside>
+</section>
+
+<main class="atlas-grid">
+
+  <!-- 1. DEGREE DISTRIBUTION -->
+  <article class="atlas-chart" id="chart-degree">
+    <div class="chart-gutter">
+      <span class="chart-folio">01</span>
+      <span class="chart-disc">degree<br>distribution</span>
+    </div>
+    <div class="chart-content">
+      <header class="chart-head">
+        <h2 class="chart-title">A small editorial cabal, with a long fringe</h2>
+        <p class="chart-dek">Sixteen hubs carry most of the conversation; nineteen figures hold a single tie. The graph is centralised, and its centre turns out to be quite small.</p>
+      </header>
+      <div class="chart-cue">
+        <span class="cue-label">how to read</span>
+        <span class="cue-text"><strong>Left panel.</strong> Each line is one person. Longer line, more co-mentions. <strong>Right panel.</strong> The y-axis is the number of figures who hold at least <em>k</em> friendly ties. Far left of the curve covers everyone with a single tie or more; far right covers only the four people mentioned alongside almost everyone else. A textbook rich-get-richer process would draw a straight diagonal on these log-log axes; the bend down at the right means Besant, Blavatsky, Leadbeater and Olcott are <em>even louder</em> than that model would predict.</span>
+      </div>
+      <div class="chart-body">
+        <svg id="vis-degree" class="chart-svg" viewBox="0 0 940 500" preserveAspectRatio="xMidYMid meet"></svg>
+        <aside class="chart-side" id="side-degree"></aside>
+      </div>
+      <p class="chart-caption atlas-prose">A small handful of organisational hubs carry the friendly graph. Besant (k=79), Blavatsky, Leadbeater and Olcott take the four highest-degree slots; nineteen nodes hold a single tie. The CCDF on the right is the statistical face of the same finding: it bends down at the tail, which is the giveaway that the four super-hubs are louder than a clean preferential-attachment process would have produced. Less rich-get-richer, more editorial cabal with a long fringe.</p>
+      <p class="chart-methods atlas-prose"><strong>Method.</strong> Friendly degree per node. The lollipop ladder on the left names the top sixteen. The right panel plots, for every value of k, the count of figures with at least k ties (a complementary cumulative distribution), on log axes for both x and y. A pure power-law degree distribution would render as a straight line on this plot; the bend down at high k is a substantive deviation, not a rendering artefact.</p>
+      <p class="chart-source">source: <em>The Theosophist</em> 1879 to 1934, friendly co-occurrence graph (n=822 edges).</p>
+    </div>
+  </article>
+
+  <!-- 2. TRADITION MIXING MATRIX -->
+  <article class="atlas-chart" id="chart-mix">
+    <div class="chart-gutter">
+      <span class="chart-folio">02</span>
+      <span class="chart-disc">tradition<br>mixing</span>
+    </div>
+    <div class="chart-content">
+      <header class="chart-head">
+        <h2 class="chart-title">Who talks to whom, by tradition</h2>
+        <p class="chart-dek">A diverging matrix of over- and under-representation. The diagonal was always going to be loud; the off-diagonal is where any actual argument lives.</p>
+      </header>
+      <div class="chart-cue">
+        <span class="cue-label">how to read</span>
+        <span class="cue-text"><strong>Dark</strong> = these two traditions appear together more than chance would predict. <strong>Blue</strong> = less than chance. <strong>Outlined diagonal</strong> = within-tradition (ignore; it was always going to be loud).</span>
+      </div>
+      <div class="chart-body">
+        <svg id="vis-mix" class="chart-svg" viewBox="0 0 760 620" preserveAspectRatio="xMidYMid meet"></svg>
+        <aside class="chart-side" id="side-mix"></aside>
+      </div>
+      <p class="chart-caption atlas-prose">The dense diagonal is the within-tradition concentration nobody needed a chart to predict. The off-diagonal cells are where the corpus shows its hand. The single strongest cell is Anthroposophy crossed with Modernist arts, which is the working argument for the hinge between organised esotericism and twentieth-century cultural production running through Steiner's circle rather than through the Adyar centre directly. Philosophy and religion crossed with Science is the runner-up, the corpus's preferred figure for science as a borrowed legitimacy. The adversary row is the more telling shape. It runs mostly negative against the legitimate traditions, with two telling exceptions: hostility crosses into the music and pop culture column (Crowley's afterlife, in shorthand) and into the occult-adjacent column, where the boundary between rival and colleague was the work the editors most often had to do.</p>
+      <p class="chart-methods atlas-prose"><strong>Method.</strong> Each cell holds the sum of friendly edge weights between figures whose tradition labels are (row, col), then scored as log₂(observed / expected) against the marginal expectation, so what registers is over- and under-representation, not raw volume. Diagonal cells (within-tradition) are outlined in ink and visually subdued; the off-diagonals carry the argument. Marginal sparkbars in the gutter give the row and column totals.</p>
+      <p class="chart-source">source: friendly edges + tradition labels assigned at corpus-construction time.</p>
+    </div>
+  </article>
+
+  <!-- 3. BROKERAGE -->
+  <article class="atlas-chart" id="chart-broker">
+    <div class="chart-gutter">
+      <span class="chart-folio">03</span>
+      <span class="chart-disc">brokerage<br>vs reach</span>
+    </div>
+    <div class="chart-content">
+      <header class="chart-head">
+        <h2 class="chart-title">Who would fracture the graph if removed</h2>
+        <p class="chart-dek">Betweenness against degree, with names plotted as the marks. Figures above the line broker more than their reach has any business buying them.</p>
+      </header>
+      <div class="chart-cue">
+        <span class="cue-label">how to read</span>
+        <span class="cue-text">Each name is one figure. <strong>Right</strong> = many co-mentions. <strong>Up</strong> = sits between cliques (a bridge). <strong>Above the line</strong> = does more bridging than their loudness alone would predict.</span>
+      </div>
+      <div class="chart-body">
+        <svg id="vis-broker" class="chart-svg" viewBox="0 0 760 520" preserveAspectRatio="xMidYMid meet"></svg>
+        <aside class="chart-side" id="side-broker"></aside>
+      </div>
+      <p class="chart-caption atlas-prose">Degree tells you who is loud. Betweenness tells you whose removal would fracture the network. The two are correlated, but not tightly. Crowley sits well above the line at BC 1585 against a friendly degree of fifteen; the Maharishi at BC 307 against degree five. The vertical distance from the line is the brokerage residual: work the figure does that raw popularity will not account for. Blavatsky, Olcott and Leadbeater sit close to the line, loud and broadly contained, their many ties pointing into the same well-knit Adyar dense pack. Besant and Krishnamurti are loud and brokering at once, perched above the line for organisational reasons that the corpus is not quiet about. Above the line beside them sit figures whose acquaintance lists are short and whose acquaintances point in incompatible directions, which is, in a small editorial pond, the more useful kind of social capital.</p>
+      <p class="chart-methods atlas-prose"><strong>Method.</strong> Brandes (2001) for unweighted betweenness centrality, computed on the giant component of the friendly graph (124 of 137 nodes). Each figure is plotted by friendly degree (x) and raw betweenness (y); the dashed line is the linear fit through the cloud, and a name's vertical distance from it indexes brokerage residual. Names are plotted directly as the mark; size encodes total mention volume.</p>
+      <p class="chart-source">source: friendly graph, giant component only; isolates excluded.</p>
+    </div>
+  </article>
+
+  <!-- 4. TEMPORAL -->
+  <article class="atlas-chart" id="chart-temporal">
+    <div class="chart-gutter">
+      <span class="chart-folio">04</span>
+      <span class="chart-disc">temporal<br>accretion</span>
+    </div>
+    <div class="chart-content">
+      <header class="chart-head">
+        <h2 class="chart-title">When the edges were born</h2>
+        <p class="chart-dek">A centred streamgraph of new ties per year. The annotation rail runs above the stream, so the events and the silhouettes can stop fighting for the same line.</p>
+      </header>
+      <div class="chart-cue">
+        <span class="cue-label">how to read</span>
+        <span class="cue-text">Each coloured band = one tradition's brand-new co-mentions in that year. <strong>Wider</strong> = more new connections. The shape is centred on a baseline (not zero), so peaks read as silhouettes, not bars.</span>
+      </div>
+      <div class="chart-body">
+        <svg id="vis-temporal" class="chart-svg" viewBox="0 0 760 540" preserveAspectRatio="xMidYMid meet"></svg>
+        <aside class="chart-side" id="side-temporal"></aside>
+      </div>
+      <p class="chart-caption atlas-prose">Two periods rise for substantive reasons. The Besant-Leadbeater consolidation in the early 1900s, when the Adyar programme was actively recruiting and <em>The Theosophist</em>'s editorial reach was being talked up, and the Krishnamurti crisis years of 1925 to 1929, when the cultural-modernist endpoints start arriving in volume more or less in lockstep with the institution's own fracture. The 1931 spike (fifty-five new edges, the year's high) sits on top of the TS Founders' Centenary, when the Adyar volumes ran long retrospective columns that yoked the long dead to the still living in the same paragraph. Many of the 1931 ties are first-attested co-mentions of then-current Adyar figures (Besant, Leadbeater, Krishnamurti, Jinarajadasa) with figures the corpus had quietly left out before. The 1933 follow-on (thirty-six edges, the runner-up) is the same mechanic again, this time around the William Crookes retrospective in volume 55. Read both as commemorative editorial bookkeeping doing the work of relationship, rather than as relationship doing its own.</p>
+      <p class="chart-methods atlas-prose"><strong>Method.</strong> Each edge is anchored to its <em>first_year</em> of attested co-mention in the corpus. Edges are stacked by the tradition of the non-Adyar endpoint (or, where both endpoints sit inside Adyar, by the lower-frequency tradition as a tie-break) and rendered as a centred streamgraph so peaks read as silhouettes and the annotation rail above stays clean. The 144 edges with no datable corpus snippet are held back from this view.</p>
+      <p class="chart-source">source: friendly edges with at least one dated snippet (n=678 of 822).</p>
+    </div>
+  </article>
+
+  <!-- 5. FRIENDLY vs HOSTILE -->
+  <article class="atlas-chart" id="chart-asym">
+    <div class="chart-gutter">
+      <span class="chart-folio">05</span>
+      <span class="chart-disc">register<br>asymmetry</span>
+    </div>
+    <div class="chart-content">
+      <header class="chart-head">
+        <h2 class="chart-title">Friendly and hostile, the same people, two registers</h2>
+        <p class="chart-dek">Each figure plotted by friendly and hostile degree. Distance from the diagonal is register asymmetry; the labels have been nudged apart to keep the cloud legible.</p>
+      </header>
+      <div class="chart-cue">
+        <span class="cue-label">how to read</span>
+        <span class="cue-text">Each name is one figure. <strong>Right of the line</strong> = mentioned more often as colleague than as enemy. <strong>Above the line</strong> = mentioned more often as enemy than as colleague. The dashed line is parity.</span>
+      </div>
+      <div class="chart-body">
+        <svg id="vis-asym" class="chart-svg" viewBox="0 0 760 520" preserveAspectRatio="xMidYMid meet"></svg>
+        <aside class="chart-side" id="side-asym"></aside>
+      </div>
+      <p class="chart-caption atlas-prose">Most densely-mentioned figures are densely-mentioned in both registers; running an organisation at this scale generates allegiance and grievance in roughly equal measure, and the corpus declines to spare anyone the second. The off-diagonal nodes are the more telling ones. Hodgson, the SPR investigator the Adyar volumes never quite forgave, is the one figure whose hostile degree actually exceeds his friendly one. Just under the line, almost balanced, sit the figures the corpus mentions in roughly equal measure as colleague and as fight: the Coulombs, Westcott of the Golden Dawn, Vsevolod Solovyov. The corpus engages all of them more often as opposition than the friendly graph alone would suggest. Well below the line sit the modernist-cultural names, who appear in <em>The Theosophist</em> almost only as approving citation, never as fight.</p>
+      <p class="chart-methods atlas-prose"><strong>Method.</strong> Each dot is a figure with at least one edge in either register. X axis: friendly degree. Y axis: hostile degree. The dashed diagonal is the identity line, and vertical distance from it indexes register asymmetry. Salient figures are labelled and the labels are nudged apart by a small repulsion pass so the cloud stays legible. A small deterministic jitter breaks up the pile-up at low values.</p>
+      <p class="chart-source">source: friendly graph (n=822) + hostile graph (n=194).</p>
+    </div>
+  </article>
+
+  <!-- 6. PATH-LENGTH FROM HPB -->
+  <article class="atlas-chart" id="chart-hpb">
+    <div class="chart-gutter">
+      <span class="chart-folio">06</span>
+      <span class="chart-disc">distance<br>from HPB</span>
+    </div>
+    <div class="chart-content">
+      <header class="chart-head">
+        <h2 class="chart-title">The Blavatsky number, in distribution</h2>
+        <p class="chart-dek">Each square is a figure. The number the front page hands you is one draw from this histogram.</p>
+      </header>
+      <div class="chart-cue">
+        <span class="cue-label">how to read</span>
+        <span class="cue-text">Each tiny square = one person. The column they sit in = how many handshakes from Blavatsky they are. The infinity column = unreachable through the corpus.</span>
+      </div>
+      <div class="chart-body">
+        <svg id="vis-hpb" class="chart-svg" viewBox="0 0 760 460" preserveAspectRatio="xMidYMid meet"></svg>
+        <aside class="chart-side" id="side-hpb"></aside>
+      </div>
+      <p class="chart-caption atlas-prose">The number the front-page lookup hands you is one draw from this histogram. Mean reachable distance from HPB is 1.72 hops; the diameter from her vantage is four. Small-world, in other words, and the shape one would expect of a movement organised around a single editorial centre. The infinity column collects the thirteen unreachable nodes. Ten are TS members of record, attested in Wikidata, who left no traceable footprint in the corpus prose; their absence is itself a methodological note about which sorts of membership archival visibility favours. Two more are Foster Bailey and Sai Baba of Shirdi, present in the lexicon for adjacent reasons and never resolved into a co-mention by the journal's editors. The thirteenth is René Guénon, who critiqued theosophy from outside the tent and was never platformed inside it, the inner circle apparently sharing a preference for being inner.</p>
+      <p class="chart-methods atlas-prose"><strong>Method.</strong> Unweighted shortest-path length from Helena Petrovna Blavatsky to every other node in the friendly graph, by breadth-first search. Each square in a stack represents one figure. Unreachable nodes are tallied in the rightmost column.</p>
+      <p class="chart-source">source: friendly graph; BFS over 124 reachable nodes.</p>
+    </div>
+  </article>
+
+</main>
+
+<footer class="atlas-foot">
+  <div class="atlas-foot-block">
+    <h3>What this page does not claim</h3>
+    <p class="atlas-prose">A co-mention network is a map of editorial attention, not of historical relationship. Two figures can share a paragraph because they collaborated, because one denounced the other, or because some 1922 review-essay paired them as opposites and the editor never got round to picking a different pairing. The friendly and hostile split goes some way toward disambiguating this; the resolution remains paragraph-level rather than relational. Treat the geometry as a prompt for archival reading, not as its substitute.</p>
+  </div>
+  <div class="atlas-foot-block">
+    <h3>Method, in one paragraph</h3>
+    <p class="atlas-prose">The corpus was tokenised into roughly 360-character sliding windows. Figure mentions were resolved against a hand-curated lexicon of names and aliases. Co-occurring pairs in the same window were aggregated, log-weighted, and split into friendly and hostile classes by a combination of lexical features (denunciation vocabulary, schism, fraud, the Coulomb and Hodgson keywords) and structural overrides for the documented adversarial cases. The full pipeline lives in the project repo, behaving largely as the prose suggests.</p>
+  </div>
+  <div class="atlas-foot-block">
+    <h3>Coverage and bias</h3>
+    <p class="atlas-prose">The corpus is Adyar-centric and English-language. The Pasadena and independent strands are present but underweighted; the Spanish, French and German Sections come through largely as their figureheads. Women adjacent to but not platformed by the inner circle (translators, hostesses, spouses) are systematically under-represented, having done much of the work and very little of the talking. The hostile graph in particular is shaped by which fights made it into print, which is not the same set as the fights that happened.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script src="atlas.js"></script>
+</body>
+</html>

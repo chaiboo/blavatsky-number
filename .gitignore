@@ -1,0 +1,19 @@
+# python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# claude code
+.claude/
+
+# derived corpus artefacts (rebuildable from data/raw + scripts/)
+data/processed/
+data/cache/
+
+# OS
+.DS_Store
+
+# build outputs
+*.pdf
+*.bak
