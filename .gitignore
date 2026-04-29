@@ -17,3 +17,7 @@ data/cache/
 # build outputs
 *.pdf
 *.bak
+
+# wrangler local state
+worker/.wrangler/
+worker/node_modules/

@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Suggest a figure · Blavatsky Number</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Bodoni+Moda:ital,wght@0,800;0,900;1,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="suggest-body">
+
+<header class="suggest-head">
+  <a class="suggest-back" href="index.html" aria-label="back to the lookup">
+    <svg viewBox="0 0 48 48" width="24" height="24" aria-hidden="true">
+      <circle cx="24" cy="24" r="21" fill="none" stroke="#0d0d12" stroke-width="1.5"/>
+      <polygon points="24,8 38,32 10,32" fill="none" stroke="#1d3df0" stroke-width="1.4"/>
+      <polygon points="24,40 10,16 38,16" fill="none" stroke="#ff2d70" stroke-width="1.4"/>
+      <circle cx="24" cy="24" r="2.4" fill="#0d0d12"/>
+    </svg>
+    <span>back to the lookup</span>
+  </a>
+</header>
+
+<main class="suggest-frame">
+  <h1 class="suggest-title">Suggest a <em>figure</em></h1>
+  <p class="suggest-kicker">Someone you think belongs in the network and is missing? Tell me. I'll review and, if it lands, the next graph build will pick them up.</p>
+
+  <form id="suggest-form" class="suggest-form" autocomplete="off" novalidate>
+
+    <!-- honeypot, real users never fill this -->
+    <div class="hp">
+      <label>Website (leave blank)<input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+    </div>
+
+    <fieldset class="fld">
+      <label class="fld-label" for="f-name">The person's name <span class="req">required</span></label>
+      <input id="f-name" name="name" type="text" required maxlength="200" placeholder="e.g., Origen of Alexandria">
+    </fieldset>
+
+    <fieldset class="fld">
+      <label class="fld-label" for="f-aliases">Aliases or variants</label>
+      <input id="f-aliases" name="aliases" type="text" maxlength="400" placeholder="comma- or pipe-separated, e.g., Origenes | Origen Adamantius">
+      <span class="fld-hint">Helps the search match misspellings and short forms.</span>
+    </fieldset>
+
+    <fieldset class="fld">
+      <label class="fld-label">Tie type <span class="req">required</span></label>
+      <div class="radio-row">
+        <label class="rad"><input type="radio" name="tie" value="friendly" checked><span>friendly (collaborator, citation, shared platform)</span></label>
+        <label class="rad"><input type="radio" name="tie" value="hostile"><span>hostile (denunciation, schism, fraud charge)</span></label>
+        <label class="rad"><input type="radio" name="tie" value="both"><span>both / unsure</span></label>
+      </div>
+    </fieldset>
+
+    <fieldset class="fld">
+      <label class="fld-label" for="f-conn-input">Connected to whom in the existing network? <span class="req">at least one</span></label>
+      <div id="f-conn" class="tagify">
+        <div class="tag-chips" id="tag-chips"></div>
+        <input id="f-conn-input" type="text" placeholder="type a name — e.g., Blavatsky, Steiner, Crowley" autocomplete="off">
+        <ul id="tag-suggest" class="tag-suggest" hidden></ul>
+      </div>
+      <span class="fld-hint">Pick everyone in the current graph this figure has a documented link to. Tab or Enter to add the highlighted suggestion.</span>
+    </fieldset>
+
+    <fieldset class="fld">
+      <label class="fld-label" for="f-why">Why they belong <span class="req">required</span></label>
+      <textarea id="f-why" name="why" rows="5" required maxlength="3000" placeholder="One paragraph. The historical relationship, the context, what the connection actually is."></textarea>
+    </fieldset>
+
+    <fieldset class="fld">
+      <label class="fld-label" for="f-cite">Citation or source <span class="req">required</span></label>
+      <textarea id="f-cite" name="citation" rows="3" required maxlength="2000" placeholder="Book, article, archive — anything I can verify against. e.g., 'Sutin, Do What Thou Wilt (2000), ch. 4.'"></textarea>
+    </fieldset>
+
+    <fieldset class="fld fld-meta">
+      <div class="fld-meta-row">
+        <div class="fld-meta-cell">
+          <label class="fld-label" for="f-submitter-name">Your name <span class="opt">optional</span></label>
+          <input id="f-submitter-name" name="submitterName" type="text" maxlength="200">
+        </div>
+        <div class="fld-meta-cell">
+          <label class="fld-label" for="f-submitter-email">Your email <span class="opt">optional</span></label>
+          <input id="f-submitter-email" name="submitterEmail" type="email" maxlength="200" placeholder="if you'd like a reply">
+        </div>
+      </div>
+    </fieldset>
+
+    <div class="form-foot">
+      <button type="submit" class="submit-btn" id="submit-btn">Send suggestion <span class="arr">→</span></button>
+      <span class="form-status" id="form-status" role="status" aria-live="polite"></span>
+    </div>
+
+  </form>
+</main>
+
+<script src="suggest.js"></script>
+</body>
+</html>

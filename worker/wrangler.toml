@@ -1,0 +1,11 @@
+name = "blavatsky-suggest"
+main = "src/worker.js"
+compatibility_date = "2025-04-01"
+
+# Public repo the Worker creates Issues in.
+[vars]
+GH_REPO = "chaiboo/blavatsky-number"
+ALLOWED_ORIGINS = "https://chaiboo.github.io,http://localhost:8765,http://127.0.0.1:8765"
+
+# GH_PAT is set via:  wrangler secret put GH_PAT
+# (PAT scope: "public_repo" — write access to issues on the public repo)
