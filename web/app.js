@@ -48,6 +48,8 @@ const FAMOUS_CHIPS_POOL = [
   // Philosophy and science
   "james_william", "bergson_henri", "buber_martin",
   "wallace_a_r", "crookes_william", "bohm_david",
+  // Patristic / antique precedents
+  "origen",
   // Politics and Indian independence
   "gandhi_m", "nehru_j", "naidu_sarojini", "bradlaugh_charles",
   "pankhurst_emmeline", "tilak_b_g",
@@ -248,6 +250,12 @@ const EDGE_NARRATIVES = {
   // ---- Conan Doyle via Leadbeater ----
   "conan_doyle_a|leadbeater_c_w":
     "<strong>Conan Doyle</strong> moved through the same London occult-and-spiritualist scene Leadbeater anchored from 1883 onward; both were on the late-Victorian psychical-research lecture circuit.",
+
+  // ---- Origen axis (patristic precedent HPB built on) ----
+  "blavatsky_h_p|origen":
+    "<strong>Origen</strong> is HPB's favourite patristic witness for the claim that the early Church taught reincarnation, the pre-existence of souls, and a layered esoteric reading of scripture. <em>Isis Unveiled</em> (1877) and <em>The Secret Doctrine</em> (1888) cite him repeatedly; his condemnation at Constantinople II in 553 is, for her, the smoking gun that the Church suppressed the original Gnosis.",
+  "mead_g_r_s|origen":
+    "<strong>G. R. S. Mead</strong>'s Alexandrian-Gnostic translation programme (<em>Pistis Sophia</em> 1896, <em>Fragments of a Faith Forgotten</em> 1900) reconstructs the Hellenistic milieu Origen taught in; he reads Origen as the bridge between Christian patristics and the mystery traditions, which is the lineage that later seeds Jung's reading of Christian Gnosticism.",
 };
 
 function edgeNarrativeKey(a, b) {
@@ -503,6 +511,7 @@ function shortName(name) {
     "George Gurdjieff": "Gurdjieff",
     "P. D. Ouspensky": "Ouspensky",
     "Oprah Winfrey": "Oprah",
+    "Origen of Alexandria": "Origen",
   };
   return known[name] || name;
 }
@@ -576,19 +585,6 @@ function wireInput() {
     else paintEmpty();
   });
 
-  // quick-tries (in the empty provenance panel)
-  document.getElementById("prov").addEventListener("click", e => {
-    const b = e.target.closest(".quick-tries button");
-    if (!b) return;
-    if (b.dataset.mode === "hostile") {
-      state.mode = MODE.hostile;
-      document.getElementById("flip").dataset.mode = "hostile";
-    } else if (state.mode !== "friendly" && b.dataset.mode !== "hostile") {
-      state.mode = MODE.friendly;
-      document.getElementById("flip").dataset.mode = "friendly";
-    }
-    selectTarget(b.dataset.target);
-  });
 }
 
 // ---------- selection: the moment that drives everything ----------
@@ -620,16 +616,7 @@ function paintEmpty() {
   if (!document.querySelector(".prov-empty")) {
     document.getElementById("prov").innerHTML = `
       <div class="prov-empty">
-        <p>Pick a name. The path draws itself, and every step says what the connection actually is.</p>
-        <div class="quick-tries">
-          <button data-target="edison_thomas">Edison</button>
-          <button data-target="kandinsky_w">Kandinsky</button>
-          <button data-target="yeats_w_b">Yeats</button>
-          <button data-target="gandhi_m">Gandhi</button>
-          <button data-target="huxley_aldous">Huxley</button>
-          <button data-target="jung_c_g">Jung</button>
-          <button data-target="crowley_a" data-mode="hostile">Crowley (hostile)</button>
-        </div>
+        <p>Pick a name on the left. The path draws itself, and every step says what the connection actually is.</p>
       </div>`;
   }
 }
