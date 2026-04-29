@@ -70,7 +70,10 @@
              2. Common aliases / variants (short answer)
              3. Why they belong (paragraph, required)
              4. Friendly or hostile tie? (multiple choice)
-             5. Who in the existing network are they connected to? (short answer)
+             5. Connected to whom in the existing network? (CHECKBOXES,
+                paste the 138-figure list — see scripts/list_figures.txt
+                or run: python -c "import json; print('\n'.join(sorted(n['name']
+                for n in json.load(open('web/data/graph.json'))['nodes'])))")
              6. Citation / source (paragraph, required)
              7. Your name (short answer, optional)
              8. Your email (short answer, optional) -->
