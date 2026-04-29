@@ -612,13 +612,9 @@ function paintEmpty() {
   svg.selectAll("*").remove();
   drawIdleCanvas(svg);
 
-  // empty provenance panel was the default, keep it.
-  if (!document.querySelector(".prov-empty")) {
-    document.getElementById("prov").innerHTML = `
-      <div class="prov-empty">
-        <p>Pick a name on the left. The path draws itself, and every step says what the connection actually is.</p>
-      </div>`;
-  }
+  // No path? No prov panel content. The idle canvas above already explains the
+  // verb; a second prompt below was redundant.
+  document.getElementById("prov").innerHTML = "";
 }
 
 // idle canvas: a horizontal preview of the kind of path that will appear when
